@@ -16,7 +16,7 @@ public class Main {
         String operator = INPUT(scanner);
         do {
             secondNum = Double.parseDouble(INPUT(scanner));
-            output = MATH(firstNum,secondNum,operator);
+            output = MATH(firstNum, secondNum, operator);
             if (secondNum == 0 && operator.equals("/")) {
                 System.out.println("Cant Divide 0 by 0. retry");
             }

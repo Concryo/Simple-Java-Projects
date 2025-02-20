@@ -9,7 +9,7 @@ public class Main {
         String userInput = scanner.nextLine();
         String userChoice = userInput.toLowerCase();
 
-        int randomNum = (int)(Math.random() * 3 + 1);
+        int randomNum = (int) (Math.random() * 3 + 1);
         String cpuChoice = "nul";
 
         switch (randomNum) {
@@ -21,7 +21,7 @@ public class Main {
 
         if (userChoice.equals(cpuChoice)) {
             System.out.println("It's A Draw!");
-        } else if (userChoice.equals("r") && cpuChoice.equals("s") || userChoice.equals("p") && cpuChoice.equals("r") || userChoice.equals("s") && cpuChoice.equals("p")){
+        } else if (userChoice.equals("r") && cpuChoice.equals("s") || userChoice.equals("p") && cpuChoice.equals("r") || userChoice.equals("s") && cpuChoice.equals("p")) {
             System.out.println("User Wins!");
         } else {
             System.out.println("Cpu Wins!");
